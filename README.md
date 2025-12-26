@@ -2,7 +2,7 @@
 This project automates the analysis of HEC-RAS 2D hydraulic simulations using Python. By directly parsing binary output files (`.hdf`), it identifies flood hotspots, calculates hazard metrics based on international safety standards, and applies Machine Learning (DBSCAN) to group high-risk areas—bypassing the need for manual processing in the HEC-RAS GUI.
 
 ## Key Features
-* **Direct Binary Parsing:** Uses `h5py` to extract high-resolution Depth and Velocity data directly from binary files for maximum speed.
+* **Direct Binary Parsing:** Uses h5py to extract high-resolution Depth and Velocity data directly from binary files for maximum speed.
 * **Automated Hazard Classification:** Computes flood risk based on the **Depth $\times$ Velocity** product ($D \times V$).
 * **Spatial Clustering (ML):** Implements **DBSCAN** to automatically detect and delineate distinct "Danger Zones" (hotspots).
 * **Automated Dashboard:** Generates a complete visualization suite (Hydrographs, Maps, Volume Curves) in a single step.
