@@ -18,7 +18,7 @@ This project automates the analysis of HEC-RAS 2D hydraulic simulations using Py
 * **Critical Analysis:** Identifies cells with maximum depth and fastest rate-of-rise.
 * **Hazard Formula:** Classifies risk levels (Low to Extreme) using the stability criterion: $Risk = Depth \times Velocity$.
 
-### 3. Spatial Clustering (The Fix)
+### 3. Spatial Clustering 
     * Groups neighboring high-risk cells into defined zones.
     * Provides aggregated statistics (e.g., Max Depth, Area) for each identified cluster.
 
