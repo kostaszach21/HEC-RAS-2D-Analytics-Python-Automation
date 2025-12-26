@@ -19,18 +19,9 @@ This project automates the analysis of HEC-RAS 2D hydraulic simulations using Py
 * **Hazard Formula:** Classifies risk levels (Low to Extreme) using the stability criterion: $Risk = Depth \times Velocity$.
 
 ### 3. Spatial Clustering (The Fix)
-* **Problem:** Standard reports fail to identify specific high-risk clusters.
-* **Solution:** We apply **DBSCAN Clustering**.
     * Groups neighboring high-risk cells into defined zones.
     * Provides aggregated statistics (e.g., Max Depth, Area) for each identified cluster.
 
 ## Usage
 
 **Prerequisites:** Python 3.x, `h5py`, `numpy`, `pandas`, `scikit-learn`, `matplotlib`.
-
-**Run the Analysis:**
-1. Place your HEC-RAS `.hdf` file in the project folder.
-2. Update the `HDF_FILE_PATH` in `src/analyzer.py`.
-3. Execute the script:
-   ```bash
-   python src/analyzer.py
