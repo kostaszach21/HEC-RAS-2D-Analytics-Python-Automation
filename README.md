@@ -43,7 +43,24 @@ Ensure you have **Python 3.9+** installed. The project relies on the following l
 * `scipy`
 
 ### Installation
-1. Clone the repository:
-Bash
-pip install -r requirements.txt
+
+It is recommended to use a virtual environment to manage dependencies and avoid conflicts.
+
+1. **Clone the repository:**
+   ```bash
    git clone [https://github.com/yourusername/HEC-RAS-2D-Analytics.git](https://github.com/yourusername/HEC-RAS-2D-Analytics.git)
+   cd HEC-RAS-2D-Analytics
+Create and activate a virtual environment:
+
+Windows:
+
+Bash
+
+python -m venv venv
+.\venv\Scripts\activate
+
+Install dependencies:
+
+Bash
+
+pip install -r requirements.txt
