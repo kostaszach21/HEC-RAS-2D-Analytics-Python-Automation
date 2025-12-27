@@ -1,4 +1,4 @@
-# HEC-RAS 2D Advanced Analytics & Python Automation
+# HEC-RAS 2D Analytics & Python Automation
 
 <p align="center">
   <img src="flood_analysis_dashboard.png" alt="HEC-RAS 2D Dashboard" width="900">
