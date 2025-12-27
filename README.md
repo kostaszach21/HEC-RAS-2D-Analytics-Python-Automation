@@ -1,8 +1,16 @@
+# HEC-RAS 2D Advanced Analytics & Python Automation
+
+<p align="center">
+  <img src="flood_analysis_dashboard.jpg" alt="HEC-RAS 2D Dashboard" width="900">
+</p>
+
 ## Project Overview
+
 This project automates the analysis of HEC-RAS 2D hydraulic simulations using Python. By directly parsing binary output files (`.hdf`), it identifies flood hotspots, calculates hazard metrics based on international safety standards, and applies Machine Learning (DBSCAN) to group high-risk areas—bypassing the need for manual processing in the HEC-RAS GUI.
 
 ## Key Features
-* **Direct Binary Parsing:** Uses h5py to extract high-resolution Depth and Velocity data directly from binary files for maximum speed.
+
+* **Direct Binary Parsing:** Uses `h5py` to extract high-resolution Depth and Velocity data directly from binary files for maximum speed.
 * **Automated Hazard Classification:** Computes flood risk based on the **Depth $\times$ Velocity** product ($D \times V$).
 * **Spatial Clustering (ML):** Implements **DBSCAN** to automatically detect and delineate distinct "Danger Zones" (hotspots).
 * **Automated Dashboard:** Generates a complete visualization suite (Hydrographs, Maps, Volume Curves) in a single step.
@@ -18,10 +26,24 @@ This project automates the analysis of HEC-RAS 2D hydraulic simulations using Py
 * **Critical Analysis:** Identifies cells with maximum depth and fastest rate-of-rise.
 * **Hazard Formula:** Classifies risk levels (Low to Extreme) using the stability criterion: $Risk = Depth \times Velocity$.
 
-### 3. Spatial Clustering 
-    * Groups neighboring high-risk cells into defined zones.
-    * Provides aggregated statistics (e.g., Max Depth, Area) for each identified cluster.
+### 3. Spatial Clustering
+* Groups neighboring high-risk cells into defined zones.
+* Provides aggregated statistics (e.g., Max Depth, Area) for each identified cluster.
 
 ## Usage
 
-**Prerequisites:** Python 3.x, `h5py`, `numpy`, `pandas`, `scikit-learn`, `matplotlib`.
+### Prerequisites
+Ensure you have **Python 3.9+** installed. The project relies on the following libraries:
+* `h5py`
+* `numpy`
+* `pandas`
+* `scikit-learn`
+* `matplotlib`
+* `seaborn`
+* `scipy`
+
+### Installation
+1. Clone the repository:
+Bash
+pip install -r requirements.txt
+   git clone [https://github.com/yourusername/HEC-RAS-2D-Analytics.git](https://github.com/yourusername/HEC-RAS-2D-Analytics.git)
